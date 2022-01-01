@@ -1,0 +1,24 @@
+{
+    "name": "tj/heroicons-blade",
+    "description": "The convinience of using Heroicons svg icons as Blade componennt <x-heroicon></x-heroicon> in Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tajid Yakub",
+            "email": "tajid.yakub@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Tj\\Icon\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tj\\Icon\\Tests": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
