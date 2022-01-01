@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 let iconPropNameSplitted = iconPropName.split(":")
                 let iconType = iconPropNameSplitted[0]
                 let iconName = iconPropNameSplitted[1]
-                let iconPath = `/icons/${iconType}/${iconName}.svg`
+                let iconPath = `/heroicons/icons/${iconType}/${iconName}.svg`
                 
                 window.fetch(request(iconPath))
                     .then(res => {

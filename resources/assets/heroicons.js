@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var iconPropNameSplitted = iconPropName.split(":");
     var iconType = iconPropNameSplitted[0];
     var iconName = iconPropNameSplitted[1];
-    var iconPath = "/icons/".concat(iconType, "/").concat(iconName, ".svg");
+    var iconPath = "/heroicons/icons/".concat(iconType, "/").concat(iconName, ".svg");
     window.fetch(request(iconPath)).then(function (res) {
       if (res.ok) {
         return res.text();

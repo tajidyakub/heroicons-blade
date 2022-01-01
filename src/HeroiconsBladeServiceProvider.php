@@ -17,7 +17,7 @@ class HeroiconsBladeServiceProvider extends ServiceProvider
         //    __DIR__.'/../config/heroicons.php' => config_path('heroicons.php'),
         // ], 'config');
 
-        // Javascript & SVG assets
+    // Javascript & SVG assets
         $this->publishes([
             __DIR__ . '/../resources/assets' => public_path('heroicons/assets'),
             __DIR__ . '/../resources/heroicons/optimized' => public_path('heroicons/icons'),

@@ -7,15 +7,33 @@ The package is using Heroicons as SVG Icons source repository and using its grou
 - Tajid Yakub <tajid.yakub@gmail.com>
 - https://github.com/tajidyakub/heroicons-blade.git
 
+
+<img src="resources/heroicons/optimized/outline/terminal.svg" width=32>
+
+<img src="resources/heroicons/optimized/outline/users.svg" width=32>
+
+<img src="resources/heroicons/optimized/outline/annotation.svg" width=32>
+
+<img src="resources/heroicons/optimized/outline/check-circle.svg" width=32>
+
+<img src="resources/heroicons/optimized/outline/cloud-download.svg" width=32>
+
+
 ## Installation
 
 Install through `composer` in your laravel app. Icons from Heroicons will be instantly available in your Laravel Views using Blade componennt `<x-heroicon></x-heroicon`>
 
-`composer require tj/heroicons-component`
+`composer require tj/heroicons-blade`
 
 The package comes with javascript and svg icons assets which need to be published in to your laravel app directory, execute publish artisan command after the package required.
 
 `php artisan vendor:publish --provider="Tj\Icon\HeroiconsBladeServiceProvider" --tag="assets"`
+
+You need to attach the javascript file, if the app is using blade's layout, this could be put on the script section of the main layout.
+
+```javascript
+<script src="/heroicons/assets/heroicons.js"></script>
+```
 
 ## Component Props and Usage
 
@@ -41,6 +59,10 @@ While `class` attribute will be merged into `svg` element, anything you define o
 ## What it does
 
 Translated `name` props will be used by `url` in the same host with laravel app and `fetch` the icon content from the public `assets` dir which by default is using `public/icons/`.
+
+## TODO
+- [ ] Implement tests.
+- [ ] Example with screenshots.
 
 ## References
 

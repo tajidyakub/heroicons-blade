@@ -21,7 +21,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Tj\\Icon\\HeroIconServiceProvider"
+                "Tj\\Icon\\HeroiconsBladeServiceProvider"
             ]
         }
     }
