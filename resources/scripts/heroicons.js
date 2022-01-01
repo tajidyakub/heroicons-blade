@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 let iconPropName = heroIcon.dataset.name
                 let iconPropNameSplitted = iconPropName.split(":")
-                let iconType = iconPropNameSplitted[0]
+                let iconType = iconPropNameSplitted[0] == 'o' ? 'outline' : 'solid'
                 let iconName = iconPropNameSplitted[1]
                 let iconPath = `/heroicons/icons/${iconType}/${iconName}.svg`
                 

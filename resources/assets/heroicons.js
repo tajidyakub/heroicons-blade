@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('svg[data-group="heroicons"]').forEach(function (heroIcon) {
     var iconPropName = heroIcon.dataset.name;
     var iconPropNameSplitted = iconPropName.split(":");
-    var iconType = iconPropNameSplitted[0];
+    var iconType = iconPropNameSplitted[0] == 'o' ? 'outline' : 'solid';
     var iconName = iconPropNameSplitted[1];
     var iconPath = "/heroicons/icons/".concat(iconType, "/").concat(iconName, ".svg");
     window.fetch(request(iconPath)).then(function (res) {
