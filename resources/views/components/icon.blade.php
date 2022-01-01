@@ -8,6 +8,8 @@
     id="heroIcon-{{$name}}"
     data-group="heroicons"
     data-name="{{$name}}"
+    width="{{$size}}"
+    height="{{$size}}"
     xmlns="http://www.w3.org/2000/svg"
     {{$attributes->merge(['class'])}}
     fill="{{$color}}" 
