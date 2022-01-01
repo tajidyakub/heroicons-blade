@@ -9,7 +9,13 @@ The package is using Heroicons as SVG Icons source repository and using its grou
 
 ## Installation
 
-Install through `composer` in your laravel app `composer require tj/heroicons-componennt`. Icons from Heroicons will be instantly available in your Laravel Views using Blade componennt `<x-heroicon></x-heroicon`>
+Install through `composer` in your laravel app. Icons from Heroicons will be instantly available in your Laravel Views using Blade componennt `<x-heroicon></x-heroicon`>
+
+`composer require tj/heroicons-componennt`
+
+The package comes with javascript and svg icons assets which need to be published in to your laravel app directory, execute publish artisan command after the package required.
+
+`php artisan vendor:publish --provider="Tj\Icon\HeroiconsBladeServiceProvider" --tag="assets"`
 
 ## Component Props and Usage
 
@@ -38,4 +44,3 @@ Translated `name` props will be used by `url` in the same host with laravel app 
 
 - Heroicons https://heroicons.com/.
 - Heroicons Git Repo https://github.com/tailwindlabs/heroicons, is cloned as a submodule in this repo inside `resources/`.
-- Spatie's Laravel Package Tools https://github.com/spatie/laravel-package-tools, skeleton for developing a Laravel Package.

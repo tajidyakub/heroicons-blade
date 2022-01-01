@@ -1,0 +1,24 @@
+{
+  "name": "heroicons-blade",
+  "version": "1.0.0",
+  "description": "The convinience of using Heroicons as a Blade component using <x-hero::icon></x-hero::icon> in your Laravel App.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "npx mix",
+    "watch": "npx mix watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "tjgit:tajidyakub/heroicons-blade.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "laravel-mix": "^6.0.39"
+  }
+}
