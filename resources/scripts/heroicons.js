@@ -26,6 +26,10 @@ const insertPath = (svgText, el) => {
     let newEl = document.createElement('div')
     newEl.innerHTML = svgText
     
+    // Standard style
+    el.style.display = 'inline'
+    el.style.marginBottom = '.2rem'
+
     newEl.querySelectorAll('path').forEach(p => {
         el.appendChild(p)
     })

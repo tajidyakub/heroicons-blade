@@ -1,6 +1,6 @@
 # Heroicons Blade
 
-> The convinience of using Heroicons as a Blade component using <x-heroicon></x-heroicon> in your Laravel App.
+> Heroicons as a Blade component using <x-hero::icon></x-hero::icon> in your Laravel App.
 
 The package is using Heroicons as SVG Icons source repository and using its grouping as icon naming in the component's props.
 
@@ -11,7 +11,7 @@ The package is using Heroicons as SVG Icons source repository and using its grou
 
 Install through `composer` in your laravel app. Icons from Heroicons will be instantly available in your Laravel Views using Blade componennt `<x-heroicon></x-heroicon`>
 
-`composer require tj/heroicons-componennt`
+`composer require tj/heroicons-component`
 
 The package comes with javascript and svg icons assets which need to be published in to your laravel app directory, execute publish artisan command after the package required.
 
@@ -19,7 +19,7 @@ The package comes with javascript and svg icons assets which need to be publishe
 
 ## Component Props and Usage
 
-Component `heroicon` will have these props which you can adjust.
+Component `hero::icon` will have these props which you can adjust.
 
 ```php
 @props([
@@ -30,6 +30,8 @@ Component `heroicon` will have these props which you can adjust.
 ```
 
 By adjusting the `name` prop, component will be able to display Heroicons svg icon with the same name, for example `o:user` translated into `outline/user.svg`.
+
+While `class` attribute will be merged into `svg` element, anything you define on the `<x-hero::icon>` will be defined directly in the `svg` element.
 
 ```php
 <!-- outline/terminal icon with 48 width and height -->
