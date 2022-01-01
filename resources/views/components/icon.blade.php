@@ -1,7 +1,7 @@
 @props([
     'name' => 'o:user',
-    'size' => 24
-    'color' => 'none' 
+    'size' => 24,
+    'color' => 'none' ,
     'stroke' => 'currentColor' ])
 
 <svg
