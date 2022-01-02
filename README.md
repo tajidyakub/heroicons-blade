@@ -17,7 +17,7 @@ The package is using Heroicons as SVG Icons source repository and using its grou
 
 Install through `composer` in your laravel app. Icons from Heroicons will be instantly available in your Laravel Views using blade componennt `<x-hero::icon></x-hero::icon`>
 
-`composer require tj/heroicons-blade`
+`composer require tjd/heroicons-blade`
 
 The package comes with javascript and svg icons assets which need to be published in to your laravel app directory, execute publish artisan command after the package required.
 
