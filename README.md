@@ -1,6 +1,10 @@
-# Heroicons Blade
+# Heroicons Blade component
 
-> Heroicons as a Blade component using <x-hero::icon></x-hero::icon> in your Laravel App.
+> Heroicons as a Blade component using \<x-hero::icon></x-hero::icon> in your Laravel App.
+
+<img src="resources/imgs/heroicons-blade.png" height="56px">
+
+`<x-hero::icon name="o:terminal" size="56"></x-hero::icon>`
 
 The package is using Heroicons as SVG Icons source repository and using its grouping as icon naming in the component's props.
 
@@ -8,20 +12,10 @@ The package is using Heroicons as SVG Icons source repository and using its grou
 - https://github.com/tajidyakub/heroicons-blade.git
 
 
-<img src="resources/heroicons/optimized/outline/terminal.svg" width=32>
-
-<img src="resources/heroicons/optimized/outline/users.svg" width=32>
-
-<img src="resources/heroicons/optimized/outline/annotation.svg" width=32>
-
-<img src="resources/heroicons/optimized/outline/check-circle.svg" width=32>
-
-<img src="resources/heroicons/optimized/outline/cloud-download.svg" width=32>
-
 
 ## Installation
 
-Install through `composer` in your laravel app. Icons from Heroicons will be instantly available in your Laravel Views using blade componennt `<x-heroicon></x-heroicon`>
+Install through `composer` in your laravel app. Icons from Heroicons will be instantly available in your Laravel Views using blade componennt `<x-hero::icon></x-hero::icon`>
 
 `composer require tj/heroicons-blade`
 
@@ -56,6 +50,8 @@ By adjusting the `name` prop, component will be able to display Heroicons svg ic
 <x-heroicon size=48 name="o:terminal"></x-heroicon>
 ```
 
+<img src="resources/imgs/heroicons-blade-component-example.png">
+
 ## Further styling
 
 Further styling using css is possible by creating a css class called `.tj-heroicons` the class is binded with the svg element therefor you could insert style properties in it.
@@ -67,10 +63,6 @@ Translated `name` props will be used by `url` in the same host with laravel app 
 ## Development
 
 It is a simple package, further development can be made by enhancing the javascript file in the `resources/script/` dir and `icon` anonymous component template in `resources/views/components/` dir.
-
-## TODO
-- [ ] Implement tests.
-- [ ] Example with screenshots.
 
 ## References
 
