@@ -1,7 +1,7 @@
 @props([
     'name' => 'o:user',
     'size' => 24,
-    'color' => 'none' ,
+    'fill' => 'none' ,
     'stroke' => 'currentColor' ])
 
 <svg
@@ -12,7 +12,7 @@
     height="{{$size}}"
     xmlns="http://www.w3.org/2000/svg"
     {{$attributes->merge(['class' => 'tj-heroicons'])}}
-    fill="{{$color}}" 
+    fill="{{$fill}}" 
     viewBox="0 0 24 24" 
     stroke="{{$stroke}}"
     aria-hidden="true">

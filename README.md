@@ -36,9 +36,11 @@ Component `hero::icon` will have these props which you can adjust.
 ```php
 @props([
     'name' => 'o:user', // the default icon use o: for outline and s: for solid
-    'size' => 24,       // default size, used for width and height of the svg icon
-    'color' => none     // used for icon's fill color 
+    'size' => 24, // default size, used for width and height of the svg icon
+    'fill' => 'none' , // used for icon's fill color
+    'stroke' => 'currentColor' // stroke props is for stroke color
 ])
+
 ```
 
 By adjusting the `name` prop, component will be able to display Heroicons svg icon with the same name, for example `o:user` translated into `outline/user.svg`.
