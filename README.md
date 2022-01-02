@@ -21,7 +21,7 @@ The package is using Heroicons as SVG Icons source repository and using its grou
 
 ## Installation
 
-Install through `composer` in your laravel app. Icons from Heroicons will be instantly available in your Laravel Views using Blade componennt `<x-heroicon></x-heroicon`>
+Install through `composer` in your laravel app. Icons from Heroicons will be instantly available in your Laravel Views using blade componennt `<x-heroicon></x-heroicon`>
 
 `composer require tj/heroicons-blade`
 
@@ -35,13 +35,13 @@ You need to attach the javascript file, if the app is using blade's layout, this
 <script src="/heroicons/assets/heroicons.js"></script>
 ```
 
-## Component Props and Usage
+## Component's props and usage
 
 Component `hero::icon` will have these props which you can adjust.
 
 ```php
 @props([
-    'name' => 'o:user', // the default icon
+    'name' => 'o:user', // the default icon use o: for outline and s: for solid
     'size' => 24,       // default size, used for width and height of the svg icon
     'color' => none     // used for icon's fill color 
 ])
@@ -49,16 +49,24 @@ Component `hero::icon` will have these props which you can adjust.
 
 By adjusting the `name` prop, component will be able to display Heroicons svg icon with the same name, for example `o:user` translated into `outline/user.svg`.
 
-While `class` attribute will be merged into `svg` element, anything you define on the `<x-hero::icon>` will be defined directly in the `svg` element.
+`class` attribute will be merged into `svg` element, any class attribute values defined on the `<x-hero::icon>` will be defined directly in the `svg` element.
 
 ```php
 <!-- outline/terminal icon with 48 width and height -->
 <x-heroicon size=48 name="o:terminal"></x-heroicon>
 ```
 
+## Further styling
+
+Further styling using css is possible by creating a css class called `.tj-heroicons` the class is binded with the svg element therefor you could insert style properties in it.
+
 ## What it does
 
-Translated `name` props will be used by `url` in the same host with laravel app and `fetch` the icon content from the public `assets` dir which by default is using `public/icons/`.
+Translated `name` props will be used by `url` in the same host with laravel app and `fetch` the icon content from the public `heroicons/icons` dir which by default is using `public/icons/`, the copy proccess was done when the assets published with `vendor:publish`.
+
+## Development
+
+It is a simple package, further development can be made by enhancing the javascript file in the `resources/script/` dir and `icon` anonymous component template in `resources/views/components/` dir.
 
 ## TODO
 - [ ] Implement tests.

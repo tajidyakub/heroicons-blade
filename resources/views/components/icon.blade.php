@@ -11,7 +11,7 @@
     width="{{$size}}"
     height="{{$size}}"
     xmlns="http://www.w3.org/2000/svg"
-    {{$attributes->merge(['class'])}}
+    {{$attributes->merge(['class' => 'tj-heroicons'])}}
     fill="{{$color}}" 
     viewBox="0 0 24 24" 
     stroke="{{$stroke}}"
