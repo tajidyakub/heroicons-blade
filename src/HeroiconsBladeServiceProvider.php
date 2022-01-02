@@ -1,6 +1,6 @@
 <?php
 
-namespace Tj\Icon;
+namespace Tjd\Icon;
 
 use Illuminate\Support\ServiceProvider;
 

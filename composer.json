@@ -1,6 +1,6 @@
 {
-    "name": "tj/heroicons-blade",
-    "description": "The convinience of using Heroicons svg icons as Blade componennt <x-heroicon></x-heroicon> in Laravel",
+    "name": "tjd/heroicons-blade",
+    "description": "The convinience of using Heroicons svg icons as Blade component <x-hero::icon></x-hero::icon> in Laravel",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -11,17 +11,17 @@
     ],
     "autoload": {
         "psr-4": {
-            "Tj\\Icon\\": "src"
+            "Tjd\\Icon\\": "src"
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require-dev": {
         "orchestra/testbench": "^6.0"
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Tj\\Icon\\HeroiconsBladeServiceProvider"
+                "Tjd\\Icon\\HeroiconsBladeServiceProvider"
             ]
         }
     }
