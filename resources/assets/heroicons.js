@@ -30,8 +30,8 @@ var insertPath = function insertPath(svgText, el) {
   var newEl = document.createElement('div');
   newEl.innerHTML = svgText; // Standard style
 
-  el.style.display = 'inline';
-  el.style.marginBottom = '.2rem';
+  el.style.display = 'inline'; // el.style.marginBottom = '.2rem'
+
   newEl.querySelectorAll('path').forEach(function (p) {
     el.appendChild(p);
   });
